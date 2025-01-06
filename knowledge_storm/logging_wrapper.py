@@ -156,8 +156,7 @@ class LoggingWrapper:
         if not self.pipeline_stage_active:
             raise RuntimeError(
                 "No pipeline stage is currently active to add query count."
-            )
-
+                }
         self.logging_dict[self.current_pipeline_stage]["query_count"] += count
 
     @contextmanager
